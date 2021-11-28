@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My course</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Custom CSS-->
+    <link href="custom_style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+</head>
+
+<body>
+    <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hiding-navbar navbar-light bg-light bg-gradient">
+        <div class="container">
+            <a class="navbar-brand" href="index.htm"><img
+                    src="https://i2.wp.com/felight.io/wp-content/uploads/2020/06/felight_logo_bold.png?w=1000&ssl=1"
+                    height="50px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills nav-fill ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.htm">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.htm">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.htm">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.htm">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Modal for Login -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Username :</label>
+          <div class="input-group pt-2 pb-2">
+            <input type="text" value="" class="form-control" id="inlineFormInputGroupUsername"
+              placeholder="Your name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email address : </label>
+          <div class="input-group mb-2 mb-sm-0 pt-2 pb-2">
+            <input type="email" value="" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-2">
+        <input type="submit" name="submit" value="Login" class="btn btn-primary btn-block rounded-3 py-2 px-5">
+        <input type="submit" name="submit" value="Close" data-bs-dismiss="modal"
+          class="btn btn-primary btn-block rounded-3 py-2 px-5">
+        <a class="nav-link mt-5" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Create an
+          account</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Model for register-->
+<div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-scrollable">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="staticBackdropLabel">Create an account</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <div class="card-body p-5">
+        <h2 class="text-uppercase text-center mb-5 mt-0">Create an account</h2>
+        <form>
+          <div class="form-outline mb-2">
+            <label class="form-label" for="form3Example1cg">Your Name</label>
+            <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+          </div>
+          <div class="form-outline mb-2">
+            <label class="form-label" for="form3Example3cg">Your Email</label>
+            <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+          </div>
+          <div class="form-outline mb-2">
+            <label class="form-label" for="form3Example4cg">Password</label>
+            <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+          </div>
+          <div class="form-outline mb-2">
+            <label class="form-label" for="form3Example4cdg">Repeat your password</label>
+            <input type="password" id="form3Example4cdg" class="form-control form-control-lg" />
+          </div>
+          <div class="form-check d-flex justify-content-center mb-2">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+            <label class="form-check-label" for="form2Example3g">
+              I agree all statements in <a href="#!" class="text-body"><u>Terms of service</u></a>
+            </label>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="button"
+              class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Register</button>
+          </div>
+          <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#" class="fw-bold text-body"
+              data-bs-toggle="modal" data-bs-target="#staticBackdrop"><u>Login here</u></a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!--Slider-->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://mediaserver.goepson.com/ImConvServlet/imconv/ab6b956e0863668f3adcca5683a4c6816908e6b2/original?use=productpictures&assetDescr=001-1400X570"
+                    class="d-block w-100" alt="..." height="500px">
+            </div>
+        </div>
+
+    </div>
+    <section id="about" class=" text-center pt-5 pb-5" style="background-image: url('https://cdn.99images.com/photos/wallpapers/creative-graphics/md/paper%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-jkqy1.jpg'); background-size: cover; background-repeat: no-repeat;">
+        <a class="text-center" href="#"><img
+            src="https://i2.wp.com/felight.io/wp-content/uploads/2020/06/felight_logo_bold.png?w=1000&ssl=1"
+            height="100px" /></a>
+        <p class ="para fw-bold">Felight is an innovative Mobile Apps Development & Training company based in Bangalore, India started by
+            collective group of professionals who are basically leads and project managers in different MNC. Since 2005,
+            we have been helping IT professionals get better at what they do by providing an extensive range of training
+            services on open source Software solutions and Agile practices. Striving towards excellence, we are
+            constantly exploring new fields of knowledge as well as new training methodologies and new ways of
+            presenting to better serve our clients. We pride ourselves by standing by our commitment to help IT
+            professionals get to the next level, by being in tune with our customers’ actual needs, and by always
+            delivering on what we promise, all while having fun doing it.
+
+            We believe in using technology to deliver a superior customer experience. Over the years, we have created a
+            Training Management Platform we call Felight ROBO. It helps us run our business more effectively and
+            recently we have started offering it to other training companies.
+
+            If you are looking for high quality IT and IT related vocational training that is industry recognized, with
+            the added excitement of learning in Bangalore and the choice of a weekend or weekdays schedule, your search
+            stops right here – at FELIGHT.
+
+            At Felight we emphasize on building the skills in our students which are valuable and also have a great
+            demand in the marketplace. These include Java,Advanced Java,Android,ios and HTML5 courses.
+
+            Our faculty comprises just the right blend of industry practitioners and academicians. They build in our
+            students a strong theoretical foundation as well as critical hands-on experience. This blend is an aspect we
+            consider particularly important to the nature of IT training.
+
+            The career progression of our students is important to us. With this in mind we provide a Careers Service at
+            felight to support you with resume building, interviews, internships as well as projects.</p>
+    </section>
+
+    <!--Footer-->
+    <footer class="text-center text-white" style="background-color: rgba(247, 241, 241, 0.926);">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 text-black fw-bold" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-black fw-bold text-decoration-none" href="https://getbootstrap.com"> getbootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>
